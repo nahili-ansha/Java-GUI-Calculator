@@ -12,21 +12,17 @@ The Java GUI Calculator is a simple yet powerful calculator application built wi
 5. Error Handling: The calculator includes error handling to ensure smooth operation and prevent unexpected behavior during calculations.
 6. Dynamic Text Fields: The calculator dynamically updates two text fields to display the input expression and the result, providing real-time feedback to the user.
 
-## Usage
-To use the Java GUI Calculator, simply run the Calculator.java file to launch the application. You can then perform calculations by clicking the number and operator buttons using your mouse or by using the keyboard. The calculator supports keyboard input for all buttons, making it accessible and convenient to use.
-
 ## Getting Started
 To get started with the Java GUI Calculator, follow these steps:
-
 1. Clone the repository or download the project files to your local machine.
 2. Open the project in your favorite Java IDE or text editor.
 3. Compile and run the Calculator.java file to launch the calculator application.
-4. Start performing calculations and exploring the features of the calculator.
+4. Start performing calculations.
+   
+## Usage
+To use the Java GUI Calculator, simply run the Calculator.java file to launch the application. You can then perform calculations by clicking the number and operator buttons using your mouse or by using the keyboard. The calculator supports keyboard input for all buttons, making it accessible and convenient to use.
 
 ## Contributions
-
 Contributions to the Java GUI Calculator project are welcome! If you encounter any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request on GitHub.
 
-## License
 
-This project is licensed under the MIT License. See the LICENSE file for details.
