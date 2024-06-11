@@ -2,7 +2,6 @@ import javax.swing.JTextField;
 
 /**
  * CalculatorOperations
- * 
  * A class to handle arithmetic operations and other functionalities of the calculator.
  */
 public class CalculatorOperations {
