@@ -89,10 +89,23 @@ public class CalculatorOperations {
 
         s2 = Double.parseDouble(text.getText()); // Set s2 to the current number
         switch (op) {
-            case '+' -> result = s1 + s2;
-            case '-' -> result = s1 - s2;
-            case '*' -> result = s1 * s2;
-            case '/' -> result = s1 / s2;
+            case '+':
+                result = s1 + s2;
+                break;
+            case '-':
+                result = s1 - s2;
+                break;
+            case '*':
+                result = s1 * s2;
+                break;
+            case '/':
+                if (s2 == 0) {
+                    throw new ArithmeticException("Cannot divide by zero");
+                }
+                result = s1 / s2;
+                break;
+            default:
+                throw new IllegalArgumentException("Invalid operator: " + operator);
         }
         text.setText(String.valueOf(result)); // Display the result in the text field
         s1 = result; // Set s1 to the result for future calculations
