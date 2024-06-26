@@ -1,4 +1,4 @@
-# java-gui-calculator
+# Java-GUI-Calculator
 Interactive Java calculator with a user-friendly GUI
 
 ## Overview
