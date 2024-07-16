@@ -1,10 +1,10 @@
+import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-import javax.swing.*;
 
 public class CalculatorPanel extends JPanel implements ActionListener {
     private JTextField text, text2;
-    private CalculatorOperations operations;
+    private CalculatorOperations calculatorOperations;
 
     public CalculatorPanel() {
         setLayout(new BorderLayout());
@@ -53,7 +53,20 @@ public class CalculatorPanel extends JPanel implements ActionListener {
         addButton(bottomPanel, "back");
         add(bottomPanel, BorderLayout.SOUTH);
 
-        operations = new CalculatorOperations(text, text2);
+        calculatorOperations = new CalculatorOperations(text, text2);
+
+        // Add KeyListener to the panel
+        KeyAdapter keyAdapter = new KeyAdapter() {
+            @Override
+            public void keyTyped(KeyEvent e) {
+                handleKeyPress(e);
+            }
+        };
+        this.addKeyListener(keyAdapter);
+        text.addKeyListener(keyAdapter);
+        text2.addKeyListener(keyAdapter);
+        setFocusable(true);
+        requestFocusInWindow(); // Request focus to enable key listening
     }
 
     private void addButton(Container panel, String text) {
@@ -65,6 +78,69 @@ public class CalculatorPanel extends JPanel implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent event) {
         String command = event.getActionCommand();
-        operations.handleCommand(command);
+        calculatorOperations.handleCommand(command);
+    }
+
+    // Handle key presses
+    private void handleKeyPress(KeyEvent e) {
+        char keyChar = e.getKeyChar();
+        switch (keyChar) {
+            case '0':
+                calculatorOperations.handleCommand("0");
+                break;
+            case '1':
+                calculatorOperations.handleCommand("1");
+                break;
+            case '2':
+                calculatorOperations.handleCommand("2");
+                break;
+            case '3':
+                calculatorOperations.handleCommand("3");
+                break;
+            case '4':
+                calculatorOperations.handleCommand("4");
+                break;
+            case '5':
+                calculatorOperations.handleCommand("5");
+                break;
+            case '6':
+                calculatorOperations.handleCommand("6");
+                break;
+            case '7':
+                calculatorOperations.handleCommand("7");
+                break;
+            case '8':
+                calculatorOperations.handleCommand("8");
+                break;
+            case '9':
+                calculatorOperations.handleCommand("9");
+                break;
+            case '.':
+                calculatorOperations.handleCommand(".");
+                break;
+            case '+':
+                calculatorOperations.handleCommand("+");
+                break;
+            case '-':
+                calculatorOperations.handleCommand("-");
+                break;
+            case '*':
+                calculatorOperations.handleCommand("*");
+                break;
+            case '/':
+                calculatorOperations.handleCommand("/");
+                break;
+            case '=':
+            case '\n': // Enter key
+                calculatorOperations.handleCommand("=");
+                break;
+            case '\b': // Backspace key
+                calculatorOperations.handleCommand("back");
+                break;
+            case 'C':
+            case 'c':
+                calculatorOperations.handleCommand("C");
+                break;
+        }
     }
 }
