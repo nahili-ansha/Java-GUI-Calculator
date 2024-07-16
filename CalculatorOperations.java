@@ -104,7 +104,7 @@ public class CalculatorOperations {
                 result = s1 / s2;
                 break;
             default:
-                throw new IllegalArgumentException("Invalid operator: " + operator);
+                throw new IllegalArgumentException("Invalid operator: " + op);
         }
         text.setText(String.valueOf(result)); // Display the result in the text field
         s1 = result; // Set s1 to the result for future calculations
