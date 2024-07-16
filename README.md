@@ -22,19 +22,21 @@ To get started with the Java GUI Calculator, follow these steps:
 To use the Java GUI Calculator, simply run the Calculator.java file to launch the application. You can then perform calculations by clicking the number and operator buttons using your mouse or by using the keyboard. The calculator supports keyboard input for all buttons, making it accessible and convenient to use.
 
 ## Keyboard Input Instructions
-Note: To use keyboard input, make sure to click on the text field first to ensure it is focused.
 
-Number Keys (0-9): Press any number key to input numbers into the calculator.
-Decimal Point (.): Press the . key to input a decimal point for floating-point numbers.
-Arithmetic Operations:
-   Addition (+): Press the + key to perform addition.
-   Subtraction (-): Press the - key to perform subtraction.
-   Multiplication (*): Press the * key to perform multiplication.
-   Division (/): Press the / key to perform division.
-Equals (=): Press the = key or the Enter key to calculate the result of the current operation.
-Clear (C): Press the C key to clear the input fields.
-Backspace (←): Press the Backspace key to delete the last character entered.
-Toggle Sign (+/-): This function can be toggled using the +/- button on the calculator UI (keyboard shortcut not assigned).
+**Note**: To use keyboard input, make sure to click on the text field first to ensure it is focused.
+
+- **Number Keys (0-9)**: Press any number key to input numbers into the calculator.
+- **Decimal Point (.)**: Press the `.` key to input a decimal point for floating-point numbers.
+- **Arithmetic Operations**:
+  - **Addition (+)**: Press the `+` key to perform addition.
+  - **Subtraction (-)**: Press the `-` key to perform subtraction.
+  - **Multiplication (*)**: Press the `*` key to perform multiplication.
+  - **Division (/)**: Press the `/` key to perform division.
+- **Equals (=)**: Press the `=` key or the `Enter` key to calculate the result of the current operation.
+- **Clear (C)**: Press the `C` key to clear the input fields.
+- **Backspace (←)**: Press the `Backspace` key to delete the last character entered.
+- **Toggle Sign (+/-)**: This function can be toggled using the +/- button on the calculator UI (keyboard shortcut not assigned).
+
 
 ## Contributions
 Contributions to the Java GUI Calculator project are welcome! If you encounter any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request on GitHub.
